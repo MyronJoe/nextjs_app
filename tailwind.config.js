@@ -10,10 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: {
-        'smx': {'max': '100px'},
-        // => @media (max-width: 639px) { ... }
-      }
+      
     },
   },
   plugins: [],
