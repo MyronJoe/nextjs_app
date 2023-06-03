@@ -1,9 +1,13 @@
 import React from 'react'
 
+export const metadata = {
+    title: 'Myron Joe Team',
+}
+
 const Team = () => {
   return (
     <div>
-        <h1>Team</h1>
+        <h1>My Team</h1>
 
         <ul>
             <li>Myron Joe</li>
