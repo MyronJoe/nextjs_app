@@ -8,14 +8,14 @@ export default function Home() {
         <ul className='flex justify-evenly items-center sm:w-[200px] p-3 sm:p-0 bg-slate-200'>
           <li><Link href="/" className='hover:text-yellow-500 font-semibold'>Home</Link></li>
           <li><Link href="/about" className='hover:text-yellow-500 font-semibold'>About</Link></li>
-          <li><Link href="/" className='hover:text-yellow-500 font-semibold'>Home</Link></li>
+          <li><Link href="/about/team" className='hover:text-yellow-500 font-semibold'>Team</Link></li>
         </ul>
       </div>
 
       <div className='flex p-3 sm:p-0'>
-        <input type="text" className='p-1 rounded w-[100%] border' placeholder='Search...' />
+        <input type="text" className='p-1 rounded w-[100%] border outline-none' placeholder='Search...' />
 
-        <button className='bg-blue-600 text-white rounded px-2 ml-2'>Search</button>
+        <button className='bg-blue-600 text-white rounded px-2 ml-2 hover:bg-blue-400'>Search</button>
       </div>
     </div>
   )
