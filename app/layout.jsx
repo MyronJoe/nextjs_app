@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ weight:['400', '700'], subsets: ['latin'] })
 
 export const metadata = {
   title: 'Myron Joe NextJS App',
