@@ -1,13 +1,18 @@
 import React from 'react'
 import { FaCodeBranch, FaEye, FaStar } from "react-icons/fa"
 import { Link } from 'next/link'
+import { resolve } from 'styled-jsx/css';
 
+// function to fetch API
 async function fetchRepos() {
     const response = await fetch('https://api.github.com/users/MyronJoe/repos');
 
+    // delaying the result for 1 sec
+    await new Promise((resolve) => setInterval(resolve, 1000));
+
     const repos = await response.json();
 
-    return repos
+    return repos;
 }
 
 const ReposPage = async () => {
