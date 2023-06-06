@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaSatellite, FaCodeBranch, FaEye, FaStar } from "react-icons/fa"
+import { FaCodeBranch, FaEye, FaStar } from "react-icons/fa"
 import { Link } from 'next/link'
 
 async function fetchRepos() {
@@ -29,13 +29,13 @@ const ReposPage = async () => {
                             <p className="sub-title text-sm my-3 truncate">{repo.description}</p>
                         </div>
 
-                        <div className="icons flex justify-between items-center">
+                        <div className="flex justify-between items-center">
 
-                            <span className='flex justify-center items-center text-xs'><FaStar /> {repo.stargazers_count}</span>
+                            <span className='icons'><FaStar /> {repo.stargazers_count}</span>
 
-                            <span className='flex justify-center items-center text-xs'><FaCodeBranch /> {repo.forks_count}</span>
+                            <span className='icons' text-gray-400><FaCodeBranch /> {repo.forks_count}</span>
 
-                            <span className='flex justify-center items-center text-xs'><FaEye /> {repo.watchers_count}</span>
+                            <span className='icons'><FaEye /> {repo.watchers_count}</span>
 
                         </div>
                     </div>
