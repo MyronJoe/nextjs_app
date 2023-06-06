@@ -25,7 +25,7 @@ const ReposPage = async () => {
                     <div key={repo.id} className=' border-b-4 border-blue-500 shadow cursor-pointer p-3 rounded hover:bg-slate-100 transition duration-300 ease-out hover:scale-105'>
 
                         <div className="repo">
-                            <h3 href="/" className='text-lg font-semibold'>{repo.name}</h3>
+                            <a href={`/code/repos/${repo.name}`} className='text-lg font-semibold hover:text-blue-500'>{repo.name}</a>
                             <p className="sub-title text-sm my-3 truncate">{repo.description}</p>
                         </div>
 
