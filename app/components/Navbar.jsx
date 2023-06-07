@@ -8,8 +8,9 @@ const Navbar = () => {
                 <ul className='flex justify-between items-center sm:w-[350px] p-3 sm:p-0 bg-slate-200'>
                     <li><Link href="/" className='links'>Home</Link></li>
                     <li><Link href="/about" className='links'>About</Link></li>
-                    <li><Link href="/about/team" className='links'>Team</Link></li>
+                    {/* <li><Link href="/about/team" className='links'>Team</Link></li> */}
                     <li><Link href="/code/repos" className='links'>Code</Link></li>
+                    <li><Link href="/contact" className='links'>Contact</Link></li>
                 </ul>
             </div>
 
