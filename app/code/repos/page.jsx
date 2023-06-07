@@ -25,6 +25,7 @@ const ReposPage = async () => {
             <h1 className='font-bold mb-2 text-2xl'>Repositories</h1>
 
             <div className="holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {/* maps the repos data to diplay it in the interface */}
                 {repos.map((repo) => (
 
                     <div key={repo.id} className=' border-b-4 border-blue-500 shadow cursor-pointer p-3 rounded hover:bg-slate-100 transition duration-300 ease-out hover:scale-105'>
