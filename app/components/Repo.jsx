@@ -16,11 +16,12 @@ const Repo = async ({ name }) => {
     const repo = await fetchRepo(name);
 
     return (
-        <div key={repo.id} className=' border-b-4 border-blue-500 shadow cursor-pointer p-3 rounded'>
+        <div key={repo.id} className='p-3 border-b'>
 
             <a href="/code/repos" className="bg-blue-500 text-white px-3 py-2 rounded hover:bg-blue-400">
                 Back To Repositories
             </a>
+
 
             <div className="repo mt-4">
                 <h3 className='text-lg font-semibold hover:text-blue-500'>{repo.name}</h3>
