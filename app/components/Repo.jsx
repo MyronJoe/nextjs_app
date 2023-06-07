@@ -4,7 +4,7 @@ import { Link } from 'next/link'
 
 //fetching the details of a particular repository
 async function fetchRepo(name) {
-    const res = await fetch(`https://api.github.com/repos/MyronJoe/${name}`);
+    const res = await fetch(`https://api.github.com/repos/MyronJoe/${name}`, { next: { revalidate: 20 } });
 
     const repo = await res.json();
 

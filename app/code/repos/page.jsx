@@ -5,7 +5,7 @@ import { resolve } from 'styled-jsx/css';
 
 // function to fetch API
 async function fetchRepos() {
-    const response = await fetch('https://api.github.com/users/MyronJoe/repos');
+    const response = await fetch('https://api.github.com/users/MyronJoe/repos', { next: { revalidate: 10 } });
 
     // delaying the result for 1 sec
     await new Promise((resolve) => setInterval(resolve, 1000));

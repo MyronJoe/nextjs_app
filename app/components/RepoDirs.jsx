@@ -7,7 +7,7 @@ async function getDirs(name) {
 
     await new Promise((resolve) => setTimeout(resolve, 3000));
 
-    const res = await fetch(`https://api.github.com/repos/MyronJoe/${name}/contents`)
+    const res = await fetch(`https://api.github.com/repos/MyronJoe/${name}/contents`, { next: { revalidate: 30 } })
 
     const dirs = await res.json()
 
